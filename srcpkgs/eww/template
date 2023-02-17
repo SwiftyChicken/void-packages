@@ -1,0 +1,27 @@
+# Template file for 'eww'
+pkgname=eww
+version=0.4.0
+revision=1
+#archs="i686 x86_64"
+#build_wrksrc=
+build_style=cargo-nightly
+#configure_args=""
+#make_build_args=""
+#make_install_args=""
+#conf_files=""
+#make_dirs="/var/log/dir 0755 root root"
+hostmakedepends="gtk+3-devel pkg-config"
+makedepends=""
+depends="gtk+3"
+short_desc="A standalone widget system made in Rust."
+maintainer="Erneste R. Rwema Rugema <richard@niyonzima.com>"
+license="MIT"
+homepage="https://github.com/elkowar/eww"
+#changelog=""
+distfiles="${homepage}/archive/refs/tags/v${version}.tar.gz"
+checksum=67f1dfdf856168d4b0e731acdd9e7bed034c09480ce2264f857d7e48f576fc8a
+
+do_install(){
+    vlicense LICENSE
+    vbin "target/$RUST_TARGET/release/eww"
+  }
