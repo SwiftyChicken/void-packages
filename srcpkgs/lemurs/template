@@ -1,0 +1,22 @@
+# Template file for 'lemurs'
+pkgname=lemurs
+version=0.3.0
+revision=1
+#archs="i686 x86_64"
+#build_wrksrc=
+build_style=cargo-nightly
+#configure_args=""
+#make_build_args=""
+#make_install_args=""
+conf_files="/etc/lemurs/config.toml /etc/lemurs/*"
+make_dirs="/etc/lemurs/wms 0755 root root"
+hostmakedepends="pam-devel"
+makedepends=""
+depends=""
+short_desc=""
+maintainer="Erneste R. Rwema Rugema <richard@niyonzima.com>"
+license="Apache-2.0, MIT"
+homepage=""
+#changelog=""
+distfiles=""
+checksum=badbadbadbadbadbadbadbadbadbadbadbadbadbadbadbadbadbadbadbadbadb
